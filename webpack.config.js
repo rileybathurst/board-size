@@ -9,7 +9,7 @@ module.exports = {
     rules: [
       {
         test: /\.scss$/,
-        use: [
+        use: [ // this seems kinda over complicated and a lot of steps
           {
             loader: 'file-loader',
             options: {

@@ -80,4 +80,13 @@ if (weight > guess_weight && weight > (guess_weight * 1.1)) {
 
 // setinnerhtml whateveer this code is
 
-console.log('close');
+
+function page() {
+    document.getElementById("pageSize").innerHTML = math; 
+}
+
+// make this happen when the page loads
+window.onload = function() {
+    page();
+};
+
