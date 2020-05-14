@@ -11,35 +11,34 @@
       <h1>Size Guide</h1>
 
       <div id="pageSize"><!-- stay gold --></div>
-      <form><!-- this makes sense to be live so I think therefore react helps that or how am I taking the number and passing through -->
-        <!-- then if im building something in react may as well use gatsby as I already have react? -->
-        <label>Input - Height
-          <input type="range" id="height" min="100" max="200" value="175" placeholder="175"><!-- onchange="rangeUpdate()" -->
+      <form>
+        <label>Height
+          <input type="range" id="height" min="100" max="200" value="175" placeholder="175" /><!-- onchange="rangeUpdate()" -->
         </label>
-        <input type="number" id="heightNumber" placeholder="175" readonly="readonly" /><!-- ready only till I get around to letting you deal with the numbers as well but thats why its an input not a div -->
+        <input type="number" id="heightNumber" placeholder="175" readonly="readonly" />cm<!-- ready only till I get around to letting you deal with the numbers as well but thats why its an input not a div -->
 
         <hr>
 
         <label>Weight
-          <input type="range" id="weight">
+          <input type="range" id="weight" value="70" placeholder="70" />
         </label>
-        <input type="number" id="weightNumber" placeholder="70" readonly="readonly" /><!-- ready only till I get around to letting you deal with the numbers as well -->
+        <input type="number" id="weightNumber" value="70" placeholder="70" readonly="readonly" />kg<!-- ready only till I get around to letting you deal with the numbers as well -->
 
         <hr>
 
         <label>Mountain
-          <input type="range" id="mountain" placeholder="0" value="0" min="-1" max="1"> <!-- i think i can do this with a datalist but its also fine as a number and converting -->
+          <input type="range" id="mountain" placeholder="0" value="0" min="-1" max="1" /> <!-- i think i can do this with a datalist but its also fine as a number and converting -->
         </label>
         <select id="mountainous" disabled>
-          <option value="big">Big</option>
-          <option value="all" selected>All Mountain</option>
-          <option value="small">Small</option>
+          <option value="1">Big</option>
+          <option value="0" selected>All Mountain</option>
+          <option value="-1">Small</option>
         </select>
       </form>
 
       <hr>
 
-      <div id="size">155<!-- default 70kgs? * 0.92 --></div>
+      <div id="finalSize">155<!-- default 70kgs? * 0.92 --></div>
 
       <script src="bundle.js" async></script>
 
