@@ -2,7 +2,6 @@
   "name": "snowboard-size",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "start": "parcel watch index.html",
     "dev": "parcel index.html",
@@ -12,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel-bundler": "^1.12.5",
+    "parcel": "^2.0.0",
     "sass": "^1.35.2"
   }
 }
