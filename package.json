@@ -3,15 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "parcel watch index.html",
-    "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "start": "parcel serve ./index.html",
+    "build": "parcel build ./index.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.0.0",
-    "sass": "^1.35.2"
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.6.0",
+    "sass": "^1.52.3"
   }
 }
